@@ -1,0 +1,33 @@
+.sign-in
+{
+    .sign-in-logo
+    {
+         width: 200px;
+         background-color: blue;
+    }
+    .sign-in-title{
+        font-size: 25px;
+        margin: 20px 25px;
+        font-weight: 700;
+        color: white;
+    
+    }
+    .sign-in-form
+    {
+        margin: auto;
+        margin-left: 20px auto;
+
+    }
+    .sign-up-link
+    {
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 500;
+        // color: blue;
+    }
+    .footer
+    {
+        display: none;
+    }
+    
+}

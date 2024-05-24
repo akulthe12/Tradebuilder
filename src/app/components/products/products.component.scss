@@ -1,0 +1,158 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    height: 200px; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.title, .description, .price {
+    margin-bottom: 10px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold; 
+}
+
+.description {
+    font-size: 1rem; 
+}
+
+.price {
+    font-size: 1rem; 
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating span {
+    margin-right: 5px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #E3F2FD;
+    align-self: flex-end;
+}
+
+.clearbtn {
+    width: 28%;
+    float: right;
+    margin-top: 2px;
+    text-align: center;
+}
+
+
+/* Media query for mobile and tablet screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .card img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+
+.ngb-rating {
+    color: green;
+    font-size: 15px;
+    filter: greyscale 100px;
+ 
+    
+}
+
+ @media (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        margin-top: 60px;
+    }
+
+    .card img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+
+/* Media query for mobile and tablet screens */
+@media (max-width: 768px) {
+    .card-top {
+        margin-top: 36px;
+    }
+}
+.carousel-item
+{
+  margin-top:20px;
+}
+.col-md-3
+{
+    margin-left: -22px
+}
+@media (max-width:768px)
+{
+    .col-md-9
+    {
+       
+        width: 72%;
+        max-width: 165%;
+        padding-right: calc(var(--bs-gutter-x)* 0.5);
+        padding-left: calc(var(--bs-gutter-x)* 0.5);
+        /* margin-top: var(--bs-gutter-y); */
+        margin-left: 297px;
+        margin-top: -52rem;
+    }
+}
+@media (max-width:768px)
+{
+    .col-md-3
+    {     margin-left: -22px;
+        margin-top: -53px;
+        width: 20rem;
+        height: 52rem;
+    }
+}

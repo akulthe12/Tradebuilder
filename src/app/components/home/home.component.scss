@@ -1,0 +1,87 @@
+.navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .form-inline input {
+    border-radius: 0;
+  }
+  
+  .form-inline button {
+    border-radius: 0;
+    border-color: #ccc;
+  }
+  
+  .navbar-nav .nav-link {
+    display: flex;
+   // align-items: center;
+    padding-right: 7px;
+    padding-left: 1px;
+  }
+  
+  .navbar-nav .nav-link i {
+    margin-right: 0.25rem;
+    margin-top: 6px
+   
+  }
+  
+  @media (min-width: 992px) {
+    .w-lg-75 {
+      width: 75%;
+    }
+  }
+  
+  .form-inline .input-group {
+    width: 100%;
+  }
+  
+  .input-group-append button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px; 
+  }
+  
+  /* navbar-toggler and brand positioning on small screens */
+  @media (max-width: 991.98px) {
+    .navbar-brand {
+      order: 2;
+      margin-left: 13px;
+      margin-right: auto;
+    }
+  
+    .navbar-toggler {
+      order: 1;
+      margin-left: 13px;
+    }
+  
+    .navbar-collapse {
+      order: 3;
+      width: 100%;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+  
+  /*  login and cart to the left on smaller screens */
+  @media (max-width: 991.98px) {
+    .navbar-nav {
+        flex-direction: inherit;
+        justify-content: end;
+      margin-right: 13px;
+      margin-top: -6rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+        width: 53rem;
+    }
+  }
